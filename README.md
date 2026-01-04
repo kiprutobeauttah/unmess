@@ -2,6 +2,8 @@
 
 A desktop photo editor built with JavaFX featuring a modern interface and comprehensive image editing tools.
 
+![Unmess Screenshot](assets/screenshot.png)
+
 ## Features
 
 **Image Adjustments**

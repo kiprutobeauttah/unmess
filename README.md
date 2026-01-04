@@ -1,28 +1,36 @@
-# Unmess - Professional Photo Editor
+# Unmess
 
-Photoshop-grade photo editing application with NASA-level engineering and professional UI design.
+A desktop photo editor built with JavaFX featuring a modern interface and comprehensive image editing tools.
 
 ## Features
 
-**Professional UI**
-- Photoshop-style interface with vertical toolbar, adjustments panel, layers panel
-- Dark professional theme optimized for long editing sessions
-- Real-time preview with live adjustments
-- Zoom controls (fit, actual size, zoom in/out)
-- Comprehensive keyboard shortcuts
-
-**Adjustments** (Tabbed Interface)
-- Basic: Exposure, Contrast, Brightness, Saturation, Vibrance, Hue
-- Tone: Highlights, Shadows, Whites, Blacks, Clarity
+**Image Adjustments**
+- Basic adjustments: Exposure, Contrast, Brightness, Saturation, Vibrance, Hue
+- Tone controls: Highlights, Shadows, Whites, Blacks, Clarity
 - Effects: Sharpen, Blur, Noise Reduction
+- Filters: Grayscale, Sepia, Invert
 
-**Filters**: Grayscale, Sepia, Invert  
-**Tools**: Selection, Move, Crop, Brush, Eraser, Text, Eyedropper, Zoom  
-**Layers**: Layer management with blend modes and opacity control  
-**History**: 20-level undo/redo with memory tracking
+**Editing Tools**
+- Selection, Move, Crop
+- Brush, Eraser, Text
+- Eyedropper, Zoom
 
-## Run
+**Layer Management**
+- Multiple layers with blend modes
+- Opacity control
+- Layer visibility toggle
 
+**History & Undo**
+- 20-level undo/redo system
+- Memory usage tracking
+
+## Getting Started
+
+**Requirements**
+- Java 21 or higher
+- Maven
+
+**Run the application**
 ```bash
 mvn clean javafx:run
 ```
@@ -37,21 +45,14 @@ mvn clean javafx:run
 ## Architecture
 
 ```
-core/          - Foundation (Constants, Logger, Validator)
-model/         - Domain model (ImageState, HistoryManager, Operation)
-engine/        - Image processing (ImageProcessorV2, PixelOperations)
-ui/            - Professional UI components (ToolsPanel, AdjustmentsPanel, LayersPanel)
-UnmessApp      - Main application with Photoshop-grade interface
+core/          - Core utilities (Constants, Logger, Validator)
+model/         - Data models (ImageState, HistoryManager, Operation)
+engine/        - Image processing engine
+ui/            - User interface components
 ```
 
-## Tech Stack
+## Technology
 
-Java 21 | JavaFX 21.0.6 | Maven
-
-## UI Components
-
-- **ToolsPanel**: Vertical toolbar with 8+ professional tools
-- **AdjustmentsPanel**: Tabbed adjustments (Basic/Tone/Effects) with individual reset buttons
-- **LayersPanel**: Layer management with blend modes and opacity
-- **PropertiesPanel**: Image info and history tracking
-- **Status Bar**: Real-time feedback with zoom level and tool info
+- Java 21
+- JavaFX 21.0.6
+- Maven
